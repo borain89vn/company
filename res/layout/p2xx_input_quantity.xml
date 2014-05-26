@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/p01_input_number"
+    style="@style/layout_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/layout_mp_wc_h"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:id="@+id/p2xx_quantity_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:singleLine="true"
+                android:textColor="#101010"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical" >
+
+                <Button
+                    android:id="@+id/p2xx_quantity_btn_close"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="29dp"
+                    android:background="@drawable/btn_close_50"
+                    android:minWidth="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="30dp" >
+
+                <ImageView
+                    android:id="@+id/p2xx_quantity_image"
+                    style="@style/input_popup_image"
+                    android:layout_width="191dp"
+                    android:layout_height="191dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter" />
+
+                <LinearLayout
+                    android:layout_width="191dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/p2xx_quantity_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="190dp"
+                        android:singleLine="true"
+                        android:textColor="@color/green"
+                        android:textSize="28sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/p2xx_quantity_et_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/input_bg"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:textColor="#000000"
+                        android:textSize="60sp" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/p2xx_quantity_tv_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/s211_input_number_unit_background"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000"
+                        android:textSize="32sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layout_wc_wc_h"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="12dp" >
+
+                    <Button
+                        android:id="@+id/p2xx_quantity_btn_plus10"
+                        style="@style/layout_wc_wc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_btn_plus10" />
+
+                    <Button
+                        android:id="@+id/p2xx_quantity_btn_minus10"
+                        style="@style/layout_wc_wc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/selector_btn_minus10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layout_wc_wc_h"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/p2xx_quantity_btn_plus1"
+                        style="@style/layout_wc_wc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_btn_plus1" />
+
+                    <Button
+                        android:id="@+id/p2xx_quantity_btn_minus1"
+                        style="@style/layout_wc_wc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/selector_btn_minus1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layout_wc_wc_h"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp" >
+
+                    <Button
+                        android:id="@+id/p2xx_quantity_btn_plus01"
+                        style="@style/layout_wc_wc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_btn_plus01" />
+
+                    <Button
+                        android:id="@+id/p2xx_quantity_btn_minus01"
+                        style="@style/layout_wc_wc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/selector_btn_minus01" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/p2xx_quantity_btn_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selector_btn_popup_complete" />
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardview"
+        style="@style/sukiya_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

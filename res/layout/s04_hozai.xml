@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".S04Activity" >
+
+    <include
+        android:id="@+id/menu"
+        layout="@layout/include_menu" />
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/include_header" />
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_line_bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/s04_txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textColor="#000000"
+                android:textSize="42sp" />
+
+            <Button
+                android:id="@+id/btn_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_question" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/s04_btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="315dp"
+                    android:background="@drawable/selector_btn_back2" />
+
+                <Button
+                    android:id="@+id/s04_btn_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_btn_complete" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_mp_wc_h"
+            android:background="@color/grey1"
+            android:paddingBottom="14dp"
+            android:paddingLeft="31dp"
+            android:paddingTop="14dp" >
+
+            <LinearLayout style="@style/layout_wc_wc_v" >
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="209dp"
+                    android:text="@string/item" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/confirm_list_head" >
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="160dp"
+                    android:text="@string/total" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/confirm_list_head" >
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="160dp"
+                    android:text="@string/s04_txt_remaining_book" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/confirm_list_head" >
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="160dp"
+                    android:text="@string/difference" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/confirm_list_head" >
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="260dp"
+                    android:text="@string/location" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/confirm_list_head" >
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="252dp"
+                    android:text="@string/actual_inventory" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/confirm_img_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey1"
+            android:paddingLeft="31dp" >
+
+            <LinearLayout
+                android:id="@+id/s04_lay_confirm_product_content_scroll"
+                style="@style/layout_mp_wc_v"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- 入力popup -->
+
+    <include layout="@layout/p01_input_number" />
+
+    <include layout="@layout/p02_input_date" />
+
+    <include layout="@layout/p06_input_part_code" />
+    <include
+        android:id="@+id/s02_help"
+        layout="@layout/help_overlay"
+        android:visibility="invisible" />
+
+</FrameLayout>

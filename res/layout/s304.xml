@@ -1,0 +1,263 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_mp_mp"
+    tools:context=".S09Activity" >
+
+    <include
+        android:id="@+id/menu"
+        layout="@layout/include_menu" />
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        style="@style/layout_mp_mp_v"
+        android:background="#efefef" >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/include_header" />
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            style="@style/layout_mp_wc_h"
+            android:background="@drawable/green_line_bottom"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/s304_txt_title"
+                style="@style/layout_wc_wc"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="@string/s304_page_title"
+                android:textColor="#000000"
+                android:textSize="42sp" />
+
+            <Button
+                android:id="@+id/btn_q"
+                style="@style/layout_wc_wc"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_btn_question" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/s304_option_1"
+                    android:layout_width="330dp"
+                    android:layout_height="95dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/s304_btn_single_choice"
+                    android:drawableRight="@drawable/btn_arrow_down_26_26_selector"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/product_category"
+                    android:textColor="@drawable/selector_btn_report_menu_label"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/s304_option_2"
+                    android:layout_width="330dp"
+                    android:layout_height="95dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/s304_btn_single_choice"
+                    android:drawableRight="@drawable/btn_arrow_down_26_26_selector"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@drawable/selector_btn_report_menu_label"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/s304_btn_back"
+                    style="@style/layout_wc_wc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/selector_btn_back" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/divider_info_content"
+            style="@style/layout_mp_wc_h" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/s304_left_side"
+                android:layout_width="550dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:minHeight="100dp"
+                android:orientation="vertical" >
+
+                <LinearLayout style="@style/layout_wc_wc_h" >
+
+                    <TextView
+                        style="@style/s304_right_cell"
+                        android:background="@drawable/s09_bg_list_title"
+                        android:gravity="center"
+                        android:text="@string/date"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        style="@style/s304_right_cell"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/s09_bg_list_title"
+                        android:gravity="center"
+                        android:text="@string/stock"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        style="@style/s304_right_cell"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/s09_bg_list_title"
+                        android:gravity="center"
+                        android:text="@string/warehouse"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        style="@style/s304_right_cell"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/s09_bg_list_title"
+                        android:gravity="center"
+                        android:text="@string/inventory_clearance"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        style="@style/s304_right_cell"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/s09_bg_list_title"
+                        android:gravity="center"
+                        android:text="@string/loss"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        style="@style/s304_right_cell"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/s09_bg_list_title"
+                        android:gravity="center"
+                        android:text="@string/move"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/green" />
+                </LinearLayout>
+
+                <jp.co.zensho.android.sukiya.VScrollView
+                    android:id="@+id/s304_v_scroll_left"
+                    android:layout_width="550dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/v_layout_scroll_left"
+                        android:layout_width="550dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </jp.co.zensho.android.sukiya.VScrollView>
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_wc_mp_h" >
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/green" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_mp_mp_v"
+                android:layout_marginRight="20dp" >
+
+                <LinearLayout style="@style/layout_mp_wc_v" >
+
+                    <jp.co.zensho.android.sukiya.HScrollView
+                        android:id="@+id/h_scroll_right_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/h_layout_right_header_column"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </jp.co.zensho.android.sukiya.HScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/green" />
+                </LinearLayout>
+
+                <jp.co.zensho.android.sukiya.VScrollView
+                    android:id="@+id/v_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:scrollbars="horizontal|vertical" >
+
+                    <jp.co.zensho.android.sukiya.HScrollView
+                        android:id="@+id/h_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="horizontal|vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/s304_v_scroll_right"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </jp.co.zensho.android.sukiya.HScrollView>
+                </jp.co.zensho.android.sukiya.VScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/s304_help"
+        layout="@layout/help_overlay"
+        android:visibility="invisible" />
+
+</FrameLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">すき家棚卸業務アプリ</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_top">TopActivity</string>
+    <string name="title_activity_input">InputActivity</string>
+    <string name="title_activity_confirm">ConfirmActivity</string>
+    <string name="title_activity_sukiya_base">SukiyaBaseActivity</string>
+    <!-- slider menu -->
+    <string name="lbl_slidermenu_01">店舗名再取得</string>
+    <string name="lbl_slidermenu_02">画像再取得 </string>
+    <string name="lbl_slidermenu_03">バージョン</string>
+    <string name="lbl_slidermenu_04">接続先設定</string>
+    <!-- Message -->
+    <string name="msg_001_no_intenet">インターネット未接続</string>
+    <string name="msg_002_no_ip_address">IPアドレスが見つかりません。</string>
+    <string name="msg_003_system_error">システムエラー: {0}</string>
+    <string name="msg_004_shop_code_not_found">店舗コードが見つかりません。</string>
+    <string name="msg_005_loading">取り込み中・・・</string>
+    <string name="msg_006_please_select_category">食材種類を選択してください。</string>
+    <string name="msg_007_part_code_input_not_empty">パートコードが入力されていません。</string>
+    <string name="msg_008_part_code_input_not_number">パートコードは数字のみで入力してください。</string>
+    <string name="msg_009_part_code_input_confirm">送信します。よろしいですか？</string>
+    <string name="msg_010_please_input_location">ロケーションは全て選択してください。</string>
+    <string name="msg_011_please_input_stock">実在庫値は全て入力してください。</string>
+    <string name="msg_012_registed">登録しました。</string>
+    <string name="msg_013_application_version">アプリバージョン　{0}</string>
+    <string name="msg_014_product_expired">使用期限切れです。ロス報告します。</string>
+    <string name="msg_015_has_product_not_input">未入力のものがあるので注意してください。</string>
+    <string name="msg_016_loc_exist">そのロケーションは既に設定されています。他のロケーションを選択してください。</string>
+    <string name="msg_017_duplicate_record">{0}の{1}のロケーションは重複しています。再度確認してください。</string>
+    <string name="kpi_head_01">総合(順位)</string>
+    <string name="kpi_head_02">原価率(％)</string>
+    <string name="kpi_head_03">ロス(千円)</string>
+    <string name="kpi_head_04">移動(回数)</string>
+    <string name="kpi_head_05">ショート(回数)</string>
+    <string name="kpi_head_06">入力時間平均 / 月(時間)</string>
+    <string name="kpi_in">入</string>
+    <string name="kpi_out">出</string>
+    <string name="kpi_mark_up">▲</string>
+    <string name="kpi_mark_down">▼</string>
+    <string name="u_egg"><u>玉子</u></string>
+    <string name="u_danboal"><u>ダンボール</u></string>
+    <string name="u_using"><u>使用中</u></string>
+    <string name="u_akadama"><u>赤玉</u></string>
+    <string name="u_cheese"><u>三種<br />ミックスチーズ</u></string>
+    <string name="item_completion">品目完了</string>
+    <string name="zero">0</string>
+    <string name="item">アイテム</string>
+    <string name="total">合計</string>
+    <string name="difference">差分</string>
+    <string name="location">ロケーション</string>
+    <string name="actual_inventory">実在庫</string>
+    <string name="product_image">画像</string>
+    <string name="done">完了</string>
+    <string name="clear_text">クリア</string>
+    <string name="location_format">{0} ({1}/{2}品目完了)</string>
+    <string name="out_of_date_reason">賞味期限</string>
+
+    <!-- Common resource -->
+    <string name="tana_eiho">営報</string>
+    <string name="tana_daily">デイリー</string>
+    <string name="tana_weekly">週間</string>
+    <string name="tana_monthly">月間</string>
+    <string name="tana_hozai">包材</string>
+    <string name="tana_shomikigen">賞味期限</string>
+    <string name="wifi_setting">WIFI設定</string>
+    <string name="exit_app">アプリ終了</string>
+    <string name="try_again">再確認</string>
+    <string name="working">処理中・・・</string>
+    <string name="ok">OK</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="transmission">送信</string>
+    <string name="slash">/</string>
+    <string name="foodstuff">の食材</string>
+    <string name="plus_1">+1</string>
+    <string name="minus_1">-1</string>
+    <string name="subfix_year_20">20</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="full_date_string">20{0}年{1}月{2}日</string>
+    <string name="guidance_year">年</string>
+    <string name="guidance_month"> 月</string>
+    <string name="guidance_hour"> 時</string>
+    <string name="guidance_minute"> 分</string>
+    <string name="year_month_dialog_title">年月を設定します</string>
+    <string name="guidance_calendar_view"> 日付を選択してください</string>
+    <string name="button_set">設定</string>
+    <string name="button_cancel">キャンセル</string>
+
+    <!-- Screen 01 -->
+    <string name="title_screen_01_pupop">{0}棚卸を開始します。</string>
+    <string name="s01_kpi_title_01">在庫日数（日）</string>
+    <string name="s01_kpi_title_02">原価率（％）</string>
+    <string name="s01_kpi_title_03">アンマッチ（件）</string>
+    <string name="s01_kpi_title_04">ロス（千円）</string>
+    <string name="s01_kpi_title_05">移動（入荷）</string>
+    <string name="s01_kpi_title_06">移動（出荷）</string>
+
+    <!-- Screen 02 -->
+    <string name="guide_start_daily">本日納品された食材を選択後、\n開始してください。</string>
+    <string name="title_screen_02">{0}食材棚卸</string>
+    <string name="title_screen_02b">{0}棚卸</string>
+    <string name="cancel">キャンセル</string>
+    <string name="s03_theoretical_value_stock">理論在庫値</string>
+    <string name="count_input_text">品目完了</string>
+
+    <!-- Screen 04 -->
+    <string name="title_screen_04">{0}棚卸確認</string>
+    <string name="s04_part_code_input_hint">パートコードを持っていない方は 0 を入力してください</string>
+    <string name="s05_title">パートコードを入力してください。</string>
+    <string name="s04_txt_remaining_book">帳簿残</string>
+    <string name="s04_txt_packaging_state">荷姿（状態）</string>
+    <!-- Screen 304 -->
+    <string name="mete_square">m<super>2</super></string>
+    <!-- Screen 401 -->
+    <string-array name="s401_name">
+        <item>在庫日数</item>
+        <item>アイテム</item>
+        <item>在庫日数</item>
+        <item>在庫分析</item>
+    </string-array>
+    <!-- Screen 401_1 -->
+    <string-array name="s401_1_name">
+        <item>指定食材アンマッチ</item>
+        <item>アイテム</item>
+        <item>数量</item>
+        <item>在庫分析</item>
+    </string-array>
+    <!-- Screen 401_2 -->
+    <string-array name="s401_2_name">
+        <item>ロス金額（ワースト３）</item>
+        <item>アイテム</item>
+        <item>金額</item>
+        <item>在庫分析</item>
+    </string-array>
+    <!-- Screen 402_1 -->
+    <string name="s402_1_title">移動（出荷）件数（ワースト５）</string>
+    <!-- Screen 402_2 -->
+    <string name="s402_2_title">移動（入荷）件数（ワースト５）</string>
+    <string name="p02_input_contol_text">期限内の一番兄の賞味期限を記入してください。</string>
+    <string name="p02_input_calender">カレンダーで入力</string>
+    <string name="p02_note">①賞味期限を調べて下さい。（商品に記載されている期限）\r\n②期限を確認後、期限切れのものはろすして下さい。\r\n③ロスした後の一番兄の在庫の賞味期限を記入して下さい。\r\n※使用期限欄が空白のものは使用または賞味期限まで提供可</string>
+    <!-- Unit -->
+    <string name="yen">円</string>
+    <string name="shop">店</string>
+    <string name="item_name">件</string>
+    <!-- Flow 2 -->
+    <string name="header_history">履歴を見る</string>
+    <string name="header_stop_register">登録中止</string>
+    <string name="header_submit">送信</string>
+    <string name="product_category">-食材分類選択-</string>
+    <string name="product_name">-食材名選択-</string>
+    <string name="input_number">-数値を入力-</string>
+    <string name="p_input_number_title_loss">ロス報告数入力</string>
+    <string name="p_input_number_title_shipping">出荷数入力</string>
+    <string name="p_input_number_title_acceptance">入荷数入力</string>
+    <string name="btn_add_to_list">リストに追加</string>
+    <string name="shop_name">‐店舗選択‐</string>
+    <string name="loss_reason">-ロス理由選択-</string>
+    <string name="short_reason">-ショート理由-</string>
+    <string name="number_short_name">No</string>
+    <string name="short_report_hour">
+<![CDATA[
+        -ショート時間帯(０～２３)-<br>
+<small>09:30→9、23:59→23、24:00→0</small>
+]]>
+    </string>
+    <string name="type_selection_export">出荷</string>
+    <string name="type_selection_import">入荷</string>
+    <string name="loss_duplicated_added_item_message">その食材、ロス理由、単位はリストに追加済です。数量を増やしたい場合はリスト上の数量をタップすることで変更が可能です。</string>
+    <string name="short_duplicated_added_item_message">その食材、ショート理由、ショート時間帯はリストに追加済です。</string>
+    <!-- Screen 201 -->
+    <string name="h2xx_loss_report_title">ロス報告</string>
+    <string name="h2xx_short_report_title">ショート報告</string>
+    <string name="h2xx_shipping_report_title">移動報告(出荷)</string>
+    <string name="h2xx_shipping_import_title">移動報告(入荷)</string>
+    <string name="p2xx_type_selection_title">移動報告種類を選択してください。</string>
+    <string name="title_activity_popup_calender">MainActivity</string>
+    <string name="header_title_expiration_date">期限内の一番兄の賞味期限</string>
+    <string name="inter_number">入り数</string>
+    <string name="expiration_date">使用期限</string>
+    <string name="msg_201_stop_register_confirm">登録中止にしますか？</string>
+    <string name="s201_col_2">食材名</string>
+    <string name="s201_col_3">ロス理由</string>
+    <string name="s201_col_4">数量</string>
+    <string name="s201_col_5">削除</string>
+    <string name="s201_history_title">ロス報告履歴</string>
+    <string name="s201_history_right_title">ロス合計金額</string>
+    <string name="s201_history_money_sum_title">円</string>
+    <string name="s201_history_col_2">送信日時</string>
+    <string name="s201_history_col_3">食材名</string>
+    <string name="s201_history_col_4">ロス理由</string>
+    <string name="s201_history_col_5">数量</string>
+    <!-- Screen 205 -->
+    <string name="s205_col_2">食材名</string>
+    <string name="s205_col_3">ショート理由</string>
+    <string name="s205_col_4">時刻</string>
+    <string name="s205_col_5">削除</string>
+    <string name="s205_history_title">ショート報告履歴</string>
+    <string name="s205_history_col_2">送信日時材名</string>
+    <string name="s205_history_col_3">食材名</string>
+    <string name="s205_history_col_4">ショート理由</string>
+    <string name="s205_history_col_5">時刻</string>
+    <!-- Screen 208 -->
+    <string name="s208_col_2">店舗名</string>
+    <string name="s208_col_3">食材名</string>
+    <string name="s208_col_4">数量</string>
+    <string name="s208_col_5">削除</string>
+    <string name="s208_history_title">移動報告履歴（出荷）</string>
+    <string name="s208_history_right_title">月度移動件数</string>
+    <string name="s208_history_count">件</string>
+    <string name="s208_history_col_2">出荷日時</string>
+    <string name="s208_history_col_3">店舗コード</string>
+    <string name="s208_history_col_4">店舗名</string>
+    <string name="s208_history_col_5">食材名</string>
+    <string name="s208_history_col_6">数量</string>
+    <string name="s208_shop_search_main_title">出荷先店舗選択</string>
+    <string name="s208_shop_search_left_title">検索結果</string>
+    <string name="s208_shop_search_right_title">履歴から選択</string>
+    <string name="s208_shop_search_hint">店舗コード または店舗名を入力</string>
+    <string name="s208_shop_search_btn">検索</string>
+    <string name="s208_shop_col_2">店舗コード</string>
+    <string name="s208_shop_col_3">店舗名</string>
+    <!-- Screen 211 -->
+    <string name="s211_left_title">出荷元店舗選択</string>
+    <string name="s211_right_title">入荷データ詳細</string>
+    <string name="s211_left_col_2">店舗コード</string>
+    <string name="s211_left_col_3">店舗名</string>
+    <string name="s211_left_col_4">出荷時刻</string>
+    <string name="s211_right_col_2">品名</string>
+    <string name="s211_right_col_3">数量</string>
+    <string name="s211_right_col_4">削除</string>
+    <string name="s211_history_title">移動報告履歴（入荷）</string>
+    <string name="s211_history_right_title">月度移動件数</string>
+    <string name="s211_history_col_2">受け取り日時</string>
+    <string name="s211_history_col_3">店舗コード</string>
+    <string name="s211_history_col_4">店舗名</string>
+    <string name="s211_history_col_5">食材名</string>
+    <string name="s211_history_col_6">数量</string>
+
+    <!-- Flow 3 -->
+    <string name="image_content_description">Product image</string>
+    <string name="s301_list_item_button1">訂正</string>
+    <string name="s301_list_item_button2">チェック</string>
+    <string name="s301_toggle_on">済</string>
+    <string name="s301_toggle_off">未</string>
+    <string name="s301_page_title">納品予定リスト</string>
+    <string name="s301_date">配送予定時：</string>
+    <string name="s301_button_display_all">全て</string>
+    <string name="s301_button_display_not_null">本日納品分</string>
+    <string name="s301_serial">No</string>
+    <string name="s301_product_image">品名</string>
+    <string name="s301_product_unit">単位</string>
+    <string name="s301_product_per_stock">パー\nストック</string>
+    <string name="s301_product_stock">在庫</string>
+    <string name="s301_product_before_last_day">前々日\n納品分</string>
+    <string name="s301_product_last_day">前日\n納品分</string>
+    <string name="s301_product_to_day">本日\n納品分</string>
+    <string name="s302_page_title">メーター検針（ガス・水道）</string>
+    <string name="s302_gas_meter_reading">ガス検針</string>
+    <string name="s302_sales_per_usage">売上当り使用量</string>
+    <string name="s302_water_meter_reading">水道検針</string>
+    <string name="s302_l">L</string>
+    <string name="s302_meter_reading_date">検針日</string>
+    <string name="s302_meter">メーター</string>
+    <string name="s302_usage">使用量</string>
+    <string name="s303_page_title">メーター検針（電気）</string>
+    <string name="s304_page_title">在庫分析 </string>
+    <string name="open_parentheses">(</string>
+    <string name="close_parentheses">)</string>
+    <string name="s303_year">年度</string>
+    <string name="s303_this_year_usage">使用量</string>
+    <string name="s303_this_year_ratio">前年比（％)</string>
+    <string name="p03_meter_input">メーター入力</string>
+    <string name="p03_last_time">前回</string>
+    <string name="p03_dot">.</string>
+    <string name="p03_input_completion">入力完了</string>
+    <string name="p03_cancellation">キャンセル</string>
+    <string name="gas">ガス</string>
+    <string name="water">水道</string>
+    <string name="gas_water">ガス・水道</string>
+    <string name="electricity">電気</string>
+    <string name="mletter">m</string>
+    <string name="two">2</string>
+    <string name="p03_meter_selection_promt">メーターの種類を選択してください。</string>
+    <string name="p03_please_insert">電気は1日と16日に入力してください。</string>
+    <string name="p02xx_title">本日納品分入力</string>
+    <string name="dauphay">、</string>
+    <string name="sale_forecasting_title">売り上げ予定（単位：万円）</string>
+    <string name="double_hyphen">--</string>
+    <string name="nohin_date">\n納品数</string>
+    <string name="zaiko_su">\n発注時点在庫</string>
+    <string name="per_stock">パーストック\n（安全在庫）</string>
+
+    <!-- S304 -->
+    <string name="stock">在庫</string>
+    <string name="warehouse">入庫</string>
+    <string name="loss">ロス</string>
+    <string name="move">移動</string>
+    <string name="inventory_clearance">使用量</string>
+    <string name="date">日付</string>
+
+    <!-- S2011 vdngo -->
+    <string name="edit_clean_promt">編集内容が失われますがよろしいですか？</string>
+    <string name="ok_promt">はい</string>
+    <string name="cancel_prompt">いいえ</string>
+
+    <!-- Host selection -->
+    <string name="password_prompt">パスワード入力</string>
+    <string name="host_prompt">ホストアドレス入力</string>
+    <string name="button_setting">設定</string>
+    <string name="config">sukiya</string>
+    <string name="next">次＞</string>
+    <string name="invalid_host">入力したホストアドレスにより接続できません。再度確認してください。</string>
+
+</resources>

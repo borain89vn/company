@@ -1,0 +1,320 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_mp_mp"
+    tools:context=".S09Activity" >
+
+    <include
+        android:id="@+id/menu"
+        layout="@layout/include_menu" />
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        style="@style/layout_mp_mp_v"
+        android:background="#efefef" >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/include_header" />
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            style="@style/layout_mp_wc_h"
+            android:background="@drawable/green_line_bottom"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/s302_txt_title"
+                style="@style/layout_wc_wc"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="20dp"
+                android:text="@string/s302_page_title"
+                android:textColor="#000000"
+                android:textSize="42sp" />
+
+            <Button
+                android:id="@+id/btn_q"
+                style="@style/layout_wc_wc"
+                android:background="@drawable/selector_btn_question" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/s302_date_selection"
+                    android:layout_width="250dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="90dp"
+                    android:background="@drawable/s302_date_pulldow_sample"
+                    android:gravity="left|center_vertical"
+                    android:onClick="showDatePickerDialog"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/grey2"
+                    android:textSize="35sp" />
+
+                <Button
+                    android:id="@+id/s302_btn_back"
+                    style="@style/layout_wc_wc"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/selector_btn_back" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_wc_wc_h" >
+
+            <LinearLayout
+                android:layout_width="596dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s302_gas_meter_reading"
+                    android:textColor="@color/green"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    style="@style/layout_mp_wc_h"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/s302_sales_per_usage"
+                        android:textColor="@color/grey7"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/s302_tv_gas_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        style="@style/layout_wc_wc_v"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="-13dp"
+                            android:text="2"
+                            android:textColor="@color/grey2"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="m"
+                            android:textColor="@color/grey2"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="596dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s302_water_meter_reading"
+                    android:textColor="@color/green"
+                    android:textSize="28sp" />
+
+                <LinearLayout
+                    style="@style/layout_mp_wc_h"
+                    android:layout_height="match_parent"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/s302_sales_per_usage"
+                        android:textColor="@color/grey7"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/s302_tv_water_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        style="@style/layout_wc_mp_v"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="bottom" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/s302_l"
+                            android:textColor="@color/grey2"
+                            android:textSize="28sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_wc_wc_h"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="42dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center"
+                android:text="@string/s301_serial"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center"
+                android:text="@string/s302_meter_reading_date"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center"
+                android:text="@string/s302_meter"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center"
+                android:text="@string/s302_usage"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center"
+                android:text="@string/s301_serial"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center"
+                android:text="@string/s302_meter_reading_date"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center"
+                android:text="@string/s302_meter"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center"
+                android:text="@string/s302_usage"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/s302_list_view_gas"
+                android:layout_width="596dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@color/grey8"
+                android:dividerHeight="2dip"
+                android:minHeight="100dp" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/s302_list_view_water"
+                android:layout_width="596dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:background="@color/white"
+                android:divider="@color/grey8"
+                android:dividerHeight="2dip"
+                android:minHeight="100dp" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/meter_input_overlay"
+        layout="@layout/p04_meter_input"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        style="@style/layout_wc_wc"
+        android:layout_marginLeft="600dp"
+        android:layout_marginTop="170dp" >
+
+        <include
+            android:id="@+id/date_picker_overlay"
+            layout="@layout/dialog_month_year"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/s301_input_partcode"
+        layout="@layout/p06_input_part_code"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/s302_help"
+        layout="@layout/help_overlay"
+        android:visibility="invisible" />
+
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:id="@+id/lin_s401_no"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_weight="6"
+        android:background="@color/background"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txt_s401_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_s401_name"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="33"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="33" >
+
+        <ImageView
+            android:id="@+id/img_s401_name"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="16.5"/>
+
+        <TextView
+            android:id="@+id/txt_s401_name"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="16.5"
+            android:background="@color/background"
+            android:gravity="center"
+            android:textColor="#9ACE00"
+            android:textSize="25sp" />
+    </LinearLayout>
+ <LinearLayout
+        android:id="@+id/lin_s401_number"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_weight="33"
+          android:layout_marginLeft="2dp"
+          android:background="@color/background"
+        android:gravity="center" >
+    <TextView
+        android:id="@+id/txt_s401_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="22sp" />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_s401_inventory_analysis"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="28"
+        android:background="@color/background"
+        android:gravity="center"
+        android:textColor="@color/textColor" >
+
+        <ImageView
+            android:id="@+id/img_s401_inventory_analysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="inventoryAnalysis"
+            android:src="@drawable/selector_btn_zaikobunseki" />
+    </LinearLayout>
+
+</LinearLayout>

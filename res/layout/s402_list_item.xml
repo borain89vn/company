@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="6"
+        android:background="@color/background"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txt_s402_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="No"
+            android:textColor="@color/textColor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_s402_name"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="28"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:weightSum="28" >
+
+        <ImageView
+            android:id="@+id/img_s402_name"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="14" />
+
+        <TextView
+            android:id="@+id/txt_s402_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="14"
+            android:background="@color/background"
+            android:textColor="#9ACE00"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="13"
+        android:background="@color/background"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txt_s402_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tbl_s402_shop_name"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="15"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="100" >
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tbl_s402_shop_count"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="13"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:src="@drawable/btn_all"
+        android:weightSum="100" >
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_s402_inventory_analysis"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="25"
+        android:background="@color/background"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_s402_inventory_analysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="inventoryAnalysis"
+            android:src="@drawable/selector_btn_zaikobunseki" />
+    </LinearLayout>
+
+</LinearLayout>

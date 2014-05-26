@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/p_s30203_popup_input_overlay"
+    style="@style/layout_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecefefef"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <LinearLayout
+        style="@style/layout_wc_wc_v"
+        android:layout_centerHorizontal="true"
+        android:background="#ecefefef"
+        android:clickable="true" >
+
+        <LinearLayout
+            style="@style/layout_wc_wc_h"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p03_meter_input"
+                android:textColor="#000000"
+                android:textSize="63sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_parentheses"
+                android:textColor="#000000"
+                android:textSize="63sp" />
+
+            <TextView
+                android:id="@+id/p_s30203_tv_title_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="63sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/close_parentheses"
+                android:textColor="#000000"
+                android:textSize="63sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p_s30203_popup_main_content"
+            style="@style/layout_wc_wc_v"
+            android:background="#ecefefef"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                style="@style/layout_wc_mp_v"
+                android:background="#ecefefef"
+                android:clickable="true" >
+
+                <LinearLayout style="@style/layout_wc_wc_v" >
+
+                    <LinearLayout
+                        style="@style/layout_mp_wc_h"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/p_s30203_tv_meter_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/green"
+                            android:textSize="40sp" />
+
+                        <LinearLayout style="@style/layout_mp_wc_h" >
+
+                            <EditText
+                                android:id="@+id/p_s30203_tv_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_green_on"
+                                android:gravity="center_vertical"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="15"
+                                android:padding="5dp"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/grey2"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_wc_wc_h"
+                        android:layout_marginTop="15dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="6dp"
+                            android:text="@string/p03_last_time"
+                            android:textColor="@color/green"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/p_s30203_tv_last_meter_overlay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:paddingLeft="14dp"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            style="@style/layout_wc_wc_v"
+                            android:layout_marginTop="12dp" >
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_plus1_first"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/btn_arrow_up_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/p_s30203_tv_first_number"
+                                style="@style/s08_input_popup_ddmmyy_TV"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/bg_input_70_84"
+                                android:gravity="center"
+                                android:paddingLeft="2dp" />
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_minus1_first"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/btn_arrow_down_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/layout_wc_wc_v"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp" >
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_plus1_second"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/btn_arrow_up_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/p_s30203_tv_second_number"
+                                style="@style/s08_input_popup_ddmmyy_TV"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/bg_input_70_84"
+                                android:gravity="center"
+                                android:paddingLeft="2dp" />
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_minus1_second"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/btn_arrow_down_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/layout_wc_wc_v"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp" >
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_plus1_third"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/btn_arrow_up_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/p_s30203_tv_third_number"
+                                style="@style/s08_input_popup_ddmmyy_TV"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/bg_input_70_84"
+                                android:gravity="center"
+                                android:paddingLeft="2dp" />
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_minus1_third"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/btn_arrow_down_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/layout_wc_wc_v"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp" >
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_plus1_fourth"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/btn_arrow_up_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/p_s30203_tv_fourth_number"
+                                style="@style/s08_input_popup_ddmmyy_TV"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/bg_input_70_84"
+                                android:gravity="center"
+                                android:paddingLeft="2dp" />
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_minus1_fourth"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/btn_arrow_down_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/layout_wc_wc_v"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp" >
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_plus1_fifth"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/btn_arrow_up_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/p_s30203_tv_fifth_number"
+                                style="@style/s08_input_popup_ddmmyy_TV"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/bg_input_70_84"
+                                android:gravity="center"
+                                android:paddingLeft="2dp" />
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_minus1_fifth"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/btn_arrow_down_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/layout_wc_wc_v"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp" >
+
+                            <TextView
+                                android:layout_width="11dp"
+                                android:layout_height="11dp"
+                                android:layout_marginTop="75dp"
+                                android:background="@drawable/dot_11_11"
+                                android:textColor="#000000"
+                                android:textSize="63sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/layout_wc_wc_v"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="12dp" >
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_plus1_sixth"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/btn_arrow_up_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/p_s30203_tv_sixth_number"
+                                style="@style/s08_input_popup_ddmmyy_TV"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/bg_input_70_84"
+                                android:gravity="center"
+                                android:paddingLeft="2dp" />
+
+                            <Button
+                                android:id="@+id/p_s30203_btn_minus1_sixth"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/btn_arrow_down_70_40"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_mp_wc"
+                        android:layout_height="41dp"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/s302_usage"
+                            android:textColor="@color/green"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/p_s30203_tv_popup_usage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layout_wc_wc_h"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/p_s30203_btn_popup_confirm"
+                        android:layout_width="230dp"
+                        android:layout_height="75dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_orange_background_selector"
+                        android:text="@string/p03_input_completion"
+                        android:textColor="@drawable/text_color_white_grey_selector"
+                        android:textSize="29sp" />
+
+                    <Button
+                        android:id="@+id/p_s30203_btn_popup_close"
+                        android:layout_width="230dp"
+                        android:layout_height="75dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_blue_background_selector"
+                        android:text="@string/p03_cancellation"
+                        android:textColor="@drawable/text_color_white_grey_selector"
+                        android:textSize="29sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardviewAmount"
+        style="@style/sukiya_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

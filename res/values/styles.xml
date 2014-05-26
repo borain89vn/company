@@ -1,0 +1,327 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowAnimationStyle">@style/Animation.Activity</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Animation" parent="android:Animation" />
+
+    <style name="Animation.Activity" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@animator/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@animator/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@animator/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@animator/slide_out_right</item>
+    </style>
+
+    <style name="layout_mp_mp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layout_mp_wc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_wc_mp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layout_wc_wc">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_mp_mp_v" parent="@style/layout_mp_mp">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layout_mp_wc_v" parent="@style/layout_mp_wc">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layout_wc_mp_v" parent="@style/layout_wc_mp">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layout_wc_wc_v" parent="@style/layout_wc_wc">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layout_mp_mp_h" parent="@style/layout_mp_mp">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layout_mp_wc_h" parent="@style/layout_mp_wc">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layout_wc_mp_h" parent="@style/layout_wc_mp">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layout_wc_wc_h" parent="@style/layout_wc_wc">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="textview_orange" parent="@style/layout_wc_wc">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="textview_orange_small" parent="@style/textview_orange">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="textview_orange_medium" parent="@style/textview_orange">
+        <item name="android:textSize">42sp</item>
+    </style>
+
+    <style name="textview_blue" parent="@style/layout_wc_wc">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="textview_blue_small" parent="@style/textview_blue">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="textview_blue_medium" parent="@style/textview_blue">
+        <item name="android:textSize">42sp</item>
+    </style>
+
+    <style name="kpi_head">
+        <item name="android:background">#6f6f6f</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="kpi_body">
+        <item name="android:background">#ffffff</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="top_menu_btn_left" parent="@style/layout_wc_wc">
+        <item name="android:layout_marginLeft">31dp</item>
+    </style>
+
+    <style name="top_menu_btn" parent="@style/layout_wc_wc">
+        <item name="android:layout_marginLeft">17dp</item>
+    </style>
+
+    <style name="input_navi_ind" parent="@style/layout_wc_wc">
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
+
+    <style name="input_slider_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="input_slider_item_text_name" parent="@style/layout_mp_wc">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="input_slider_item_text_package" parent="@style/layout_mp_wc">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="input_slider_item_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">220dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="input_slider_item_amount">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="input_slider_item_text_amount">
+        <item name="android:layout_width">188dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="input_slider_item_text_unit">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="layout_overlay" parent="@style/layout_mp_mp_v">
+        <item name="android:background">#ecefefef</item>
+    </style>
+
+    <style name="input_popup_text_name" parent="@style/layout_wc_wc">
+        <item name="android:layout_marginLeft">180dp</item>
+        <item name="android:textColor">#101010</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="input_popup_image" parent="@style/layout_wc_wc">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="confirm_list_text">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@color/grey2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="confirm_list_head" parent="@style/layout_wc_wc_v">
+        <item name="android:layout_marginLeft">2dp</item>
+    </style>
+
+    <style name="input_slider_item_text_expiration_date">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="expiration_slider_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">74dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="exporation_product_image_237_wc">
+        <item name="android:layout_width">237dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="s08_input_popup_image" parent="@style/layout_wc_wc">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:paddingBottom">40dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingTop">40dp</item>
+    </style>
+
+    <style name="s08_input_popup_ddmmyy_TV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">63sp</item>
+    </style>
+
+    <style name="s09_list_item_product_image">
+        <item name="android:layout_width">210dp</item>
+    </style>
+
+    <style name="s09_list_item_product_expiredate">
+        <item name="android:layout_width">530dp</item>
+    </style>
+
+    <style name="s09_list_item_product_net_and_expiretxt">
+        <item name="android:layout_width">250dp</item>
+    </style>
+
+    <style name="s301_list_item_number">
+        <item name="android:layout_width">52dp</item>
+    </style>
+
+    <style name="s301_list_item_product_name_image">
+        <item name="android:layout_width">280dp</item>
+    </style>
+
+    <style name="s301_list_item_product_unit">
+        <item name="android:layout_width">70dp</item>
+    </style>
+
+    <style name="s301_list_item_product_amount">
+        <item name="android:layout_width">108dp</item>
+    </style>
+
+    <style name="s301_list_item_product_zaiko_su">
+        <item name="android:layout_width">128dp</item>
+    </style>
+
+    <style name="s301_list_item_product_perstock">
+        <item name="android:layout_width">138dp</item>
+    </style>
+
+    <style name="s301_list_item_product_button">
+        <item name="android:layout_width">120dp</item>
+    </style>
+
+    <style name="s301_list_item_product_image">
+        <item name="android:layout_width">191dp</item>
+        <item name="android:layout_height">191dp</item>
+    </style>
+
+    <style name="unit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">#A4A4A4</item>
+    </style>
+
+    <style name="sukiya_keyboard" parent="android:Widget.KeyboardView">
+        <item name="android:keyTextSize">50sp</item>
+        <item name="android:keyTextColor">@color/white</item>
+        <item name="android:keyPreviewHeight">150dp</item>
+        <item name="android:labelTextSize">25sp</item>
+    </style>
+
+    <style name="default_list_blank_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="s304_right_cell">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="s304_left_cell">
+        <item name="android:layout_width">118dp</item>
+        <item name="android:layout_height">75dp</item>
+    </style>
+
+</resources>

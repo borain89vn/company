@@ -1,0 +1,478 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_mp_mp"
+    tools:context=".S301Activity" >
+
+    <include
+        android:id="@+id/menu"
+        layout="@layout/include_menu" />
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        style="@style/layout_mp_mp_v"
+        android:background="@color/grey1" >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/include_header" />
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            style="@style/layout_mp_wc_h"
+            android:background="@drawable/green_line_bottom"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                style="@style/layout_wc_wc_v"
+                android:layout_marginLeft="30dp" >
+
+                <LinearLayout
+                    style="@style/layout_wc_wc_h"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/page_title"
+                        style="@style/layout_wc_wc"
+                        android:text="@string/s301_page_title"
+                        android:textColor="#000000"
+                        android:textSize="36sp" />
+
+                    <Button
+                        android:id="@+id/btn_q"
+                        style="@style/layout_wc_wc"
+                        android:background="@drawable/selector_btn_question" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layout_mp_wc"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/layout_wc_wc"
+                        android:text="@string/s301_date"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/page_date_time"
+                        style="@style/layout_wc_wc"
+                        android:text="12:45"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_mp_wc"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/s301_btn_back"
+                    style="@style/layout_wc_wc"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/btn_back_264_94_selector" />
+
+                <Button
+                    android:id="@+id/S301_btn_confirm"
+                    style="@style/layout_wc_wc"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_btn_confirm" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_mp_wc_h"
+            android:layout_height="90dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="13dp"
+            android:gravity="left|center_vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="40"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/s301_btn_display_all"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/s301_toggle_btn"
+                    android:paddingLeft="14dp"
+                    android:text="@string/s301_button_display_all"
+                    android:textColor="@color/green"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/s301_btn_display_not_null"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/green"
+                    android:paddingRight="10dp"
+                    android:text="@string/s301_button_display_not_null"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="60"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/s09_bg_list_title"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/sale_forecasting_title"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="25"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/s301_tv_date1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/grey2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/s301_tv_date1_sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/grey2"
+                            android:textSize="32sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="25"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/s301_tv_date2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/grey2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/s301_tv_date2_sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/grey2"
+                            android:textSize="32sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="25"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/s301_tv_date3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/grey2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/s301_tv_date3_sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/grey2"
+                            android:textSize="32sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="25"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/s301_tv_date4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/grey2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/s301_tv_date4_sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/grey2"
+                            android:textSize="32sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                style="@style/s301_list_item_number"
+                android:layout_height="match_parent"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/s301_serial"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/s301_list_item_product_name_image"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_product_name_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/s301_product_image"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/s301_list_item_product_unit"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_product_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/s301_product_unit"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/s301_list_item_product_amount"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_nohin_date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/nohin_date"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/s301_list_item_product_amount"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_nohin_date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/s301_product_stock"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/s301_list_item_product_amount"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_nohin_date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/s301_product_before_last_day"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/s301_list_item_product_zaiko_su"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_zaiko_su"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/s301_product_last_day"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/s301_list_item_product_perstock"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_per_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/s301_product_to_day"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/s301_list_item_product_button"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_item_product_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/s301_list_item_button1"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/s301_list_item_product_amount"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/s09_bg_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/s301_tv_item_product_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/s301_list_item_button2"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efefef" >
+
+            <ListView
+                android:id="@+id/s301_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="27dp"
+                android:background="@color/white"
+                android:divider="@color/grey8"
+                android:dividerHeight="2dip"
+                android:minHeight="100dp" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 入力popup -->
+
+    <include
+        android:id="@+id/s301_input_popup"
+        layout="@layout/p2xx_input_quantity"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/s301_input_partcode"
+        layout="@layout/p06_input_part_code"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/s301_help"
+        layout="@layout/help_overlay"
+        android:visibility="invisible" />
+
+</FrameLayout>

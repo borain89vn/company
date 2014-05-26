@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="calendar_background">#d0ffffff</color>
+    <color name="calendar_hilite">#ffffffff</color>
+    <color name="calendar_light">#64c6d4ef</color>
+    <color name="calendar_dark">#6456648f</color>
+    <color name="calendar_foreground">#ff000000</color>
+    <color name="calendar_hint_0">#64ff0000</color>
+    <color name="calendar_hint_1">#6400ff80</color>
+    <color name="calendar_hint_2">#2000ff80</color>
+    <color name="calendar_selected">#64ffcc00</color>
+    <color name="calendar_holiday">#ffFF0000</color>
+    <color name="calendar_saturday">#ff0000FF</color>
+    <color name="shadowColor">#BB000000</color>
+    <color name="green">#9ace00</color>
+    <color name="orange">#ff9f1a</color>
+    <color name="blue">#31c0fc</color>
+    <color name="grey1">#efefef</color>
+    <color name="grey2">#6f6f6f</color>
+    <color name="grey5">#9f9f9f</color>
+    <color name="grey3">#dfdfdf</color>
+    <color name="grey8">#efefef</color>
+    <color name="grey4">#bfbfbf</color>
+    <color name="grey6">#E6E6E6</color>
+    <color name="grey7">#4f4f4f</color>
+    <color name="white">#ffffff</color>
+    <color name="textColor">#626262</color>
+    <color name="background">#FFFFFF</color>
+    <color name="tbl_row_color">#E6E6E6</color>
+    <color name="black">#000</color>
+    <color name="item_name">#9AFE2E</color>
+    <color name="text_report">#585858</color>
+    <color name="s304_header_color">#FBFFEE</color>
+    <color name="s202_location">#c8e27b</color>
+</resources>

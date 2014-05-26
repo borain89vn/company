@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/p01_input_number"
+    style="@style/layout_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:visibility="invisible" >
+
+    <LinearLayout
+        android:id="@+id/p01_lay_01"
+        style="@style/layout_mp_wc_h"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingTop="30dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/p01_txt_product_title"
+                style="@style/input_popup_text_name"
+                android:layout_marginLeft="100dp"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/p01_btn_close"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/btn_close_50"
+                    android:minWidth="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/p01_txt_sub_title"
+            style="@style/input_popup_text_name"
+            android:layout_marginLeft="100dp"
+            android:ellipsize="end"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/p01_lay_02"
+        style="@style/layout_mp_wc_h"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/p01_lay_01"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="640dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="30dp" >
+
+            <ImageView
+                android:id="@+id/p01_img_product_image"
+                style="@style/input_popup_image"
+                android:layout_width="240dp"
+                android:layout_height="290dp"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="640dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/layout_mp_wc_h"
+                android:layout_width="match_parent" >
+
+                <EditText
+                    android:id="@+id/p01_txt_product_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bg"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:textColor="#000000"
+                    android:textSize="60sp" >
+                </EditText>
+
+                <LinearLayout
+                    style="@style/layout_wc_wc_v"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="bottom|left" >
+
+                    <TextView
+                        android:id="@+id/p01_txt_product_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_wc_wc_h"
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp" >
+
+                <Button
+                    android:id="@+id/p01_btn_plus10"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_btn_plus10" />
+
+                <Button
+                    android:id="@+id/p01_btn_minus10"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/selector_btn_minus10" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_wc_wc_h"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp" >
+
+                <Button
+                    android:id="@+id/p01_btn_plus1"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_btn_plus1" />
+
+                <Button
+                    android:id="@+id/p01_btn_minus1"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/selector_btn_minus1" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_wc_wc_h"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp" >
+
+                <Button
+                    android:id="@+id/p01_btn_plus01"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_btn_plus01" />
+
+                <Button
+                    android:id="@+id/p01_btn_minus01"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/selector_btn_minus01" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/p01_btn_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p01_lay_02"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_popup_complete" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p01_btn_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/memo"
+        android:paddingBottom="10dp"
+        android:paddingLeft="300dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/p01_txt_product_memo"
+            android:layout_width="600dp"
+            android:layout_height="156dp"
+            android:background="@drawable/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false" >
+
+        </EditText>
+    </LinearLayout>
+    
+	<android.inputmethodservice.KeyboardView
+	    android:id="@+id/keyboardview"
+	    style="@style/sukiya_keyboard"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerHorizontal="true"
+	    android:focusable="true"
+	    android:focusableInTouchMode="true"
+	    android:visibility="gone" />
+
+</RelativeLayout>

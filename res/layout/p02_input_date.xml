@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/p02_input_date"
+    style="@style/layout_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:visibility="invisible" >
+
+    <LinearLayout
+        style="@style/layout_mp_wc_h"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="30dp" >
+
+        <TextView
+            android:id="@+id/p02_txt_product_title"
+            style="@style/input_popup_text_name"
+            android:layout_marginLeft="100dp"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/p02_btn_close"
+                style="@style/layout_wc_wc"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_close_50"
+                android:minWidth="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_mp_wc_h"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="30dp" >
+
+            <ImageView
+                android:id="@+id/p02_img_product_image"
+                style="@style/input_popup_image"
+                android:layout_width="240dp"
+                android:layout_height="290dp"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp" 
+                android:contentDescription="@string/product_image"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p02_input_contol_text"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                style="@style/layout_wc_wc_h"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="100dp" >
+
+                <Button
+                    android:id="@+id/p02_btn_plus_year"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p02_selector_btn_plus_date"
+					android:textColor="@drawable/p02_selector_text_color_btn_plus_minus_date"
+                    android:text="@string/plus_1"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/p02_btn_plus_month"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/p02_selector_btn_plus_date"
+					android:textColor="@drawable/p02_selector_text_color_btn_plus_minus_date"
+                    android:text="@string/plus_1"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/p02_btn_plus_date"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/p02_selector_btn_plus_date"
+					android:textColor="@drawable/p02_selector_text_color_btn_plus_minus_date"
+                    android:text="@string/plus_1"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_wc_wc_h"
+                android:layout_width="match_parent" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="5dp"
+                    android:text="@string/subfix_year_20"
+                    android:textColor="@color/black"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/p02_txt_year"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p02_bg_input_date"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|bottom"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:text="@string/year"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p02_txt_month"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p02_bg_input_date"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|bottom"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:text="@string/month"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p02_txt_day"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p02_bg_input_date"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|bottom"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:text="@string/day"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_wc_wc_h"
+                android:layout_width="match_parent"
+                android:paddingLeft="100dp" >
+
+                <Button
+                    android:id="@+id/p02_btn_minus_year"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/p02_selector_btn_minus_date"
+					android:textColor="@drawable/p02_selector_text_color_btn_plus_minus_date"
+                    android:text="@string/minus_1"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/p02_btn_minus_month"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/p02_selector_btn_minus_date"
+					android:textColor="@drawable/p02_selector_text_color_btn_plus_minus_date"
+                    android:text="@string/minus_1"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/p02_btn_minus_date"
+                    style="@style/layout_wc_wc"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/p02_selector_btn_minus_date"
+					android:textColor="@drawable/p02_selector_text_color_btn_plus_minus_date"
+                    android:text="@string/minus_1"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/p02_btn_calendar"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:text="@string/p02_input_calender" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/p02_btn_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_popup_complete" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/memo"
+        android:paddingBottom="10dp"
+        android:paddingLeft="300dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/p02_txt_product_memo"
+            android:layout_width="600dp"
+            android:layout_height="156dp"
+            android:background="@drawable/transparent"
+            android:enabled="false"
+            android:gravity="left|center_vertical"
+            android:text="@string/p02_note"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

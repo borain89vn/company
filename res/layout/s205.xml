@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".S205Activity" >
+
+    <include
+        android:id="@+id/menu"
+        layout="@layout/include_menu" />
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/merge_menu" />
+        </LinearLayout>
+
+        <include layout="@layout/s2xx_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="35"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/s205_rl_product_cat_sel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/btn_grey_background_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/s205_tv_product_cat_sel"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/product_category"
+                        android:textColor="@drawable/selector_btn_report_menu_label"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/s205_img_product_cat_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/btn_arrow_down_26_26_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/s205_rl_product_name_sel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_grey_background_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/s205_tv_product_name_sel"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/product_name"
+                        android:textColor="@drawable/selector_btn_report_menu_label"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/s205_img_product_name_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/btn_arrow_down_26_26_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/s205_rl_short_reason_sel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_grey_background_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/s205_tv_short_reason_sel"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/short_reason"
+                        android:textColor="@drawable/selector_btn_report_menu_label"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/s205_img_short_reason_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/btn_arrow_down_26_26_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/s205_rl_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_grey_background_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/s205_tv_hour"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/short_report_hour"
+                        android:textColor="@drawable/selector_btn_report_menu_label"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/s205_img_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/btn_arrow_down_26_26_selector" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/s205_btn_add_to_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_green_background_selector"
+                    android:text="@string/btn_add_to_list"
+                    android:textColor="@drawable/text_color_white_green_selector"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="65"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100" >
+
+                    <TextView
+                        style="@style/confirm_list_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:text="@string/number_short_name" />
+
+                    <TextView
+                        style="@style/confirm_list_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="35"
+                        android:text="@string/s205_col_2" />
+
+                    <TextView
+                        style="@style/confirm_list_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="25"
+                        android:text="@string/s205_col_3" />
+
+                    <TextView
+                        style="@style/confirm_list_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="15"
+                        android:text="@string/s205_col_4" />
+
+                    <TextView
+                        style="@style/confirm_list_text"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="15"
+                        android:text="@string/s205_col_5" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/s205_ll_default_items_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100" >
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_weight="10" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="35" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="25" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100" >
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_weight="10" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="35" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="25" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100" >
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_weight="10" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="35" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="25" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100" >
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_weight="10" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="35" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="25" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100" >
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_weight="10" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="35" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="25" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+
+                            <TextView
+                                style="@style/default_list_blank_item"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="15" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/s205_lv_short_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:divider="@drawable/separator_line"
+                        android:dividerHeight="2.0px"
+                        android:listSelector="@android:color/transparent" >
+                    </ListView>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- popup view history -->
+
+    <LinearLayout
+        android:id="@+id/p205_ll_view_history"
+        style="@style/layout_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/s205_history_title"
+                    android:textColor="#000000"
+                    android:textSize="42sp" />
+
+                <LinearLayout
+                    android:id="@+id/p205_ll_view_history_date_select"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/s302_date_pulldow_sample"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/p205_tv_view_history_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/year"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/p205_tv_view_history_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/month"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/p205_btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="29dp"
+                    android:background="@drawable/btn_close_50" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="7"
+                    android:text="@string/number_short_name" />
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="28"
+                    android:text="@string/s205_history_col_2" />
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="22"
+                    android:text="@string/s205_history_col_3" />
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="28"
+                    android:text="@string/s205_history_col_4" />
+
+                <TextView
+                    style="@style/confirm_list_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="15"
+                    android:text="@string/s205_history_col_5" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/p205_lv_short_report_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:divider="@drawable/separator_line"
+                android:dividerHeight="2.0px"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Popup input partcode -->
+
+    <include layout="@layout/p06_input_part_code" />
+
+    <include
+        android:id="@+id/s205_help"
+        layout="@layout/help_overlay"
+        android:visibility="invisible" />
+
+</FrameLayout>

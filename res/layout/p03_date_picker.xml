@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/p03_date_picker"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:gravity="bottom|right"
+    android:orientation="vertical"
+    android:visibility="invisible" >
+
+    <jp.co.zensho.android.sukiya.calendar.MotionableScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="420dp"
+        android:layout_height="350dp"
+        android:fillViewport="true"
+        android:soundEffectsEnabled="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <jp.co.zensho.android.sukiya.calendar.CalendarView
+                android:id="@+id/cal_input_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+            </jp.co.zensho.android.sukiya.calendar.CalendarView>
+        </LinearLayout>
+    </jp.co.zensho.android.sukiya.calendar.MotionableScrollView>
+
+</LinearLayout>

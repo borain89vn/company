@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_mp_wc_v"
+    android:layout_height="match_parent"
+    android:background="#ecefefef"
+    android:clickable="true"
+    android:gravity="center|center_vertical"
+    android:paddingBottom="52dp"
+    android:paddingTop="52dp" >
+
+    <LinearLayout
+        style="@style/layout_wc_wc_v"
+        android:layout_height="wrap_content"
+        android:background="@drawable/s05_bg_center"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="25dp" >
+
+            <TextView
+                android:id="@+id/p2xx_partcode_tv_guide_start_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/s05_title"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="32dp"
+            android:paddingTop="20dp"
+            android:textAlignment="center" >
+
+            <EditText
+                android:id="@+id/p2xx_partcode_et_input_part_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/s05_bg_input"
+                android:gravity="center"
+                android:inputType="number|numberSigned"
+                android:maxLength="15"
+                android:textSize="50sp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/s04_part_code_input_hint"
+                android:textColor="@color/grey2"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/p2xx_partcode_btn_cancel"
+                style="@style/layout_wc_wc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/s05_btn_cancel"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/p2xx_partcode_btn_regist"
+                style="@style/layout_wc_wc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/s05_btn_transmission"
+                android:text="@string/transmission"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

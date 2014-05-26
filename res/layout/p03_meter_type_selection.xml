@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/p03_meter_selection"
+    style="@style/layout_mp_mp_v"
+    android:background="#ecefefef"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:background="@drawable/p_s300_background_border"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green" >
+
+            <TextView
+                android:id="@+id/s303_tv_type_of_meter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/p03_meter_selection_promt"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_wc_wc_h"
+            android:layout_marginTop="35dp" >
+
+            <LinearLayout
+                style="@style/layout_wc_wc_h"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/s303_btn_gas_water"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_green_background_selector_enable"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/gas_water"
+                    android:textColor="@drawable/text_color_white_grey_selector"
+                    android:textSize="38sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_wc_wc_h"
+                android:layout_marginLeft="20dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/s303_btn_electricity"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_green_background_selector_enable"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/electricity"
+                    android:textColor="@drawable/text_color_white_grey_selector"
+                    android:textSize="38sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_mp_wc_h"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/s303_tv_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/p03_please_insert"
+                android:textColor="#000000"
+                android:textSize="38sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

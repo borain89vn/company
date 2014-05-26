@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_wc_wc_v"
+    android:paddingLeft="8dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/slide_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/input_slider_item"
+            android:layout_width="match_parent" >
+
+            <TextView
+                android:id="@+id/product_item_name"
+                style="@style/input_slider_item_text_name"
+                android:layout_width="235dp"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/input_slider_item"
+            android:layout_width="match_parent" >
+
+            <TextView
+                android:id="@+id/product_item_name1"
+                style="@style/input_slider_item_text_package"
+                android:layout_width="235dp"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/input_slider_item_image"
+            android:layout_width="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/product_item_image"
+                style="@style/layout_mp_wc"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:contentDescription="Product image"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/input_slider_item_amount"
+            android:layout_width="match_parent" >
+
+            <TextView
+                android:id="@+id/product_item_amount"
+                style="@style/input_slider_item_text_amount" />
+
+            <TextView
+                android:id="@+id/product_item_unit"
+                style="@style/input_slider_item_text_unit" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
